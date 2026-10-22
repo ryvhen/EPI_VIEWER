@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+logs/
+dataset_bruto/
+runs/
+venv/
+.venv/
