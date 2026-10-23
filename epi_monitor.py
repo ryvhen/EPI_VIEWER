@@ -22,17 +22,14 @@ from mediapipe.tasks import python as mp_python
 from mediapipe.tasks.python import vision
 from ultralytics import YOLO
 
-# =====================================================================
-# CONFIGURACAO (ajuste aqui, nao no meio do codigo)
-# =====================================================================
 MODELO_YOLO = "best.pt"
-IMGSZ = 320                  # mesmo valor usado no treino (best.pt = 320; modelo novo = 640)
-CONF_YOLO = 0.35
+IMGSZ = 640
+CONF_YOLO = 0.25
 MODELO_ROSTO = "blaze_face_short_range.tflite"
 CAMERA_INDEX = 0
 
-CLASSE_OCULOS = "Glasses"
-CLASSE_ABAFADOR = "Earmuffs"
+CLASSE_OCULOS = "OCULOS"
+CLASSE_ABAFADOR = "PROTETOR AURICULAR"
 
 # Janela deslizante com votacao
 JANELA_FRAMES = 15           # quantos frames recentes entram na votacao
