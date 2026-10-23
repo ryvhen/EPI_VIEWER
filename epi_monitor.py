@@ -252,6 +252,7 @@ def main():
     t_anterior, fps = time.monotonic(), 0.0
 
     print("Monitor iniciado. 'q' = sair | 'd' = debug")
+    registro.gravar("INICIO_SESSAO", False, False, 0)
 
     while True:
         ok, frame = cap.read()
@@ -338,6 +339,10 @@ def main():
         if tecla == ord("d"):
             debug = not debug
 
+    if registrada:  # encerrou o programa no meio de uma infracao
+        registro.gravar("SESSAO_ENCERRADA", ultimo_oculos, ultimo_abafador,
+                        time.monotonic() - t_inicio_sem_epi)
+    registro.gravar("FIM_SESSAO", False, False, 0)
     cap.release()
     cv2.destroyAllWindows()
 
