@@ -1,7 +1,12 @@
 __pycache__/
 *.pyc
+venv/
+.venv/
 logs/
 dataset_bruto/
 runs/
-venv/
-.venv/
+*.jpg
+*.png
+dataset_teste/
+avaliacao/erros/
+relatorio/
