@@ -35,7 +35,7 @@ def contar(pasta, prefixo):
 
 
 def main():
-    pessoa = input("ID da pessoa (ex: renan, joao): ").strip().lower().replace(" ", "_") or "pessoa"
+    pessoa = input("ID da pessoa (ex: renan, cesar): ").strip().lower().replace(" ", "_") or "pessoa"
 
     cap = cv2.VideoCapture(CAMERA_INDEX, cv2.CAP_DSHOW)
     if not cap.isOpened():
