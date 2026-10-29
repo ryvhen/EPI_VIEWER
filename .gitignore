@@ -10,3 +10,8 @@ runs/
 dataset_teste/
 avaliacao/erros/
 relatorio/
+dataset_bruto_antigo/
+dataset_teste_antigo/
+dataset_teste_novo/
+avaliacao_antigo/erros/
+avaliacao_novo/erros/

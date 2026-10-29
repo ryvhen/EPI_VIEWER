@@ -47,8 +47,8 @@ ARQUIVO_CSV = os.path.join(PASTA_LOGS, "eventos.csv")
 OCULOS_DESVIO_X_MAX = 0.30       # centro dos oculos vs ponto medio dos olhos (largura do rosto)
 OCULOS_DESVIO_Y_MAX = 0.20       # idem na vertical (altura do rosto)
 OCULOS_LARGURA = (0.60, 1.50)    # largura da caixa / largura do rosto
-OCULOS_ALTURA_MAX = 0.40         # rejeita caixa que cobre o rosto inteiro
-ABAFADOR_DIST_MAX = 0.45         # centro da caixa ate a orelha (em larguras do rosto)
+OCULOS_ALTURA_MAX = 0.50         # rejeita caixa que cobre o rosto inteiro
+ABAFADOR_DIST_MAX = 0.75        # centro da caixa ate a orelha (em larguras do rosto)
 ABAFADOR_LADOS_MIN = 1           # 1 = basta um lado visivel; 2 = exige os dois
 
 # =====================================================================
